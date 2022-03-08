@@ -4,20 +4,29 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+}
+
 div.calculator {
-    width: 100vw;
+    max-width: 500px;
     height: 100vh;
     padding: 50px;
-    background: black;
+    background: rgb(44, 77, 167);
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: "output output"
-    "first-row first-row"
-    "second-row second-row"
-    "third-row third-row"
-    "fourth-row fourth-row"
-    "fifth-row fifth-row"
+    "inputs inputs"
+    "inputs inputs"
+    "inputs inputs"
+    "inputs inputs"
+    "inputs inputs"
+}
+
+div.inputs {
+    grid-area: inputs;
 }
 
 div.output {
@@ -31,33 +40,14 @@ div.output {
 div.inputs button {
     min-width: 80px;
     min-height: 80px;
+    font-size: 30px;
+    text-align: center;
     border-radius: 50%;
     border: none;
     margin: 5px;
 }
 
-div.inputs .first-row {
+div.inputs .row {
     display: flex;
     justify-content: space-around;
-    grid-area: first-row;
-}
-
-div.inputs .second-row {
-    display: flex;
-    grid-area: second-row;
-}
-
-div.inputs .third-row {
-    display: flex;
-    grid-area: third-row;
-}
-
-div.inputs .fourth-row {
-    display: flex;
-    grid-area: fourth-row;
-}
-
-div.inputs .fifth-row {
-    display: flex;
-    grid-area: fifth-row;
 }
