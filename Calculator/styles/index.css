@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.calculator {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "output output"
+    "first-row first-row"
+    "second-row second-row"
+    "third-row third-row"
+    "fourth-row fourth-row"
+    "fifth-row fifth-row"
+}
+
+div.output {
+    background: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    grid-area: output;
+}
+
+div.inputs button {
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+}
+
+div.inputs .first-row {
+    display: flex;
+    justify-content: space-around;
+    grid-area: first-row;
+}
+
+div.inputs .second-row {
+    display: flex;
+    grid-area: second-row;
+}
+
+div.inputs .third-row {
+    display: flex;
+    grid-area: third-row;
+}
+
+div.inputs .fourth-row {
+    display: flex;
+    grid-area: fourth-row;
+}
+
+div.inputs .fifth-row {
+    display: flex;
+    grid-area: fifth-row;
+}
