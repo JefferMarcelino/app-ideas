@@ -20,6 +20,10 @@ operations.forEach(element => {
         if (element.textContent == "X") {    
             multiplication(output, number, element)
         }
+
+        if (element.textContent == "=") {
+            show(result)
+        }
     })
 })
 
@@ -35,5 +39,5 @@ function multiplication(saida, numero, elemento) {
 }
 
 function show(result) {
-    console.log("result")
+    console.log(result)
 }
