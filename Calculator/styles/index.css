@@ -40,15 +40,27 @@ div.preview {
     background: white;
 }
 
-div.output {
-    background: white;
-    width: 100%;
-    height: 50px;
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
     padding: 10px;
-    font-size: 20px;
-    text-align: right;
-    grid-area: output;
-}
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .output .previous-operand{
+    color: rgba(255,255, 255, 0.75);
+    font-size: 1.5rem;
+  }
+
+  .output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+  }
 
 div.inputs button {
     color: white;
