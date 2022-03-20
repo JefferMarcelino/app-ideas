@@ -79,6 +79,15 @@ div.inputs button {
     margin: 5px;
 }
 
+div.inputs button.clear {
+    width: 75%;
+    border-radius: 30px;
+}
+
+div.inputs button:hover {
+    background: #5f5a5a;
+}
+
 div.inputs .row {
     display: flex;
     justify-content: space-around;
